@@ -16,7 +16,7 @@ match default_model_provider:
             model_name=default_model_name,
             temperature=default_model_temperature,
             openai_api_key="ollama",  # This can be any non-empty string
-            openai_api_base="http://IPADDRESS:11434/v1",
+            openai_api_base="http://0.0.0.0:5000/v1",
         )
     case _:
         raise ValueError(f"Unsupported model provider: {default_model_provider}")
